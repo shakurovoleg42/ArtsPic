@@ -12,7 +12,7 @@ const calc = (size, material, options, promocode, result) => {
 
         if (sizeBlock.value == '' || materialBlock.value == "") {
             resultBlock.textContent = "Пожалуйста,  выберите рвзмер и материал картины";
-        } else if (promocodeBlock.value === 'IWANTPOPART') {
+        } else if (promocodeBlock.value == 'IWANTPOPART') {
             resultBlock.textContent = Math.round(sum * 0.7);
         } else {
             resultBlock.textContent = sum;
